@@ -1,4 +1,4 @@
-import Routing from "./router"
+import Routing from "./Router"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
