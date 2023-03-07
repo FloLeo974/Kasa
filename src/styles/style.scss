@@ -1,0 +1,14 @@
+@use './colors';
+@import url(_Header.scss);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  padding: 40px 100px 0 100px;
+  max-width: 1440px;
+  color: colors.$color-primary;
+}
