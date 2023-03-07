@@ -1,6 +1,6 @@
 @use './colors';
 
-.footer {
+footer {
     background-color: colors.$couleur-footer;
     text-align: center;
     height: 209px;
@@ -14,3 +14,13 @@
     };
 }
 
+@media screen and (max-width: 768px) {
+    footer {
+        & p {
+            font-size: 12px;
+        }
+        & img {
+            margin: 62px 0 24px 0;
+        }
+    }
+}

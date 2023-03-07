@@ -11,7 +11,18 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   margin: auto;
-  padding: 40px 100px 0 100px;
   max-width: 1440px;
   color: colors.$couleur-primaire;
+}
+
+header, .accueil {
+  margin-left:100px;
+  margin-right:100px;
+}
+
+@media screen and (max-width: 768px) {
+  header, .accueil {
+    margin-left:20px;
+    margin-right:20px;
+  }
 }
