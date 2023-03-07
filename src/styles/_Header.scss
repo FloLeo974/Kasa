@@ -1,3 +1,5 @@
+@use './colors';
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -8,13 +10,13 @@ nav {
     font-size: 24px;
     margin: auto 0;
     & a {
-        padding-left: 57px;
+        padding-left: 56px;
     }
 }
 
 a {
     text-decoration: none;
-    color: #FF6060;
+    color: colors.$couleur-primaire;
     &.active {
         text-decoration: underline;
     }

@@ -1,5 +1,7 @@
 @use './colors';
+
 @import url(_Header.scss);
+@import url(_Footer.scss);
 
 * {
   box-sizing: border-box;
@@ -7,8 +9,9 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   margin: auto;
   padding: 40px 100px 0 100px;
   max-width: 1440px;
-  color: colors.$color-primary;
+  color: colors.$couleur-primaire;
 }
