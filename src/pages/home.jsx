@@ -1,5 +1,12 @@
+import Banner from "../components/Banner"
+import BannerImg from "../assets/Banner_Home.jpg"
+
 function Home() {
-    return <div className="accueil">Page d'accueil</div>
+    return(
+        <main className="main_home">
+            <Banner image={BannerImg} texte="Chez vous, partout et ailleurs"/>
+        </main>
+    )
 }
-  
+
 export default Home

@@ -2,6 +2,7 @@
 
 @import url(_Header.scss);
 @import url(_Footer.scss);
+@import url(_Banner.scss);
 
 * {
   box-sizing: border-box;
@@ -11,18 +12,30 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   margin: auto;
-  max-width: 1440px;
   color: colors.$couleur-primaire;
 }
 
-header, .accueil {
-  margin-left:100px;
-  margin-right:100px;
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.main {
+  &_home {
+    padding: 63px 100px;
+  }
+  &_about {
+    padding: 44px 100px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  header, .accueil {
-    margin-left:20px;
-    margin-right:20px;
+  .main {
+    &_home {
+      padding: 16px 20px;
+    }
+    &_about {
+      padding: 17px 20px;
+    }
   }
 }
