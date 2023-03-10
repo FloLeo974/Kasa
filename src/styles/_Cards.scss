@@ -1,0 +1,30 @@
+@use './colors';
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 56px 20px;
+    background-color: colors.$couleur-tertiaire;
+}
+
+.card {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    margin: 25px auto;
+    & img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    & p {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 18px;
+        color: colors.$couleur-secondaire;
+    }
+}
