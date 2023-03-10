@@ -3,7 +3,7 @@ import logo from '../assets/Logo_Header.png'
  
 function Header() {
     return (
-        <header className='header'>
+        <header>
             <Link to="/">
                 <img src={logo} alt="Logo de Kasa" />
             </Link>

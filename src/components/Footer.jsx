@@ -4,7 +4,7 @@ import logo from '../assets/Logo_Footer.png'
 
 function Footer() {
     return (
-        <footer className="footer">
+        <footer>
             <Link to="/">
                 <img src={logo} alt="Logo de Kasa" />
             </Link>

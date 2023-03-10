@@ -3,6 +3,7 @@
 @import url(_Header.scss);
 @import url(_Footer.scss);
 @import url(_Banner.scss);
+@import url(_Cards.scss);
 
 * {
   box-sizing: border-box;
@@ -21,20 +22,20 @@ main {
 }
 
 .main {
-  &_home {
+  &__home {
     padding: 63px 100px;
   }
-  &_about {
+  &__about {
     padding: 44px 100px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .main {
-    &_home {
+    &__home {
       padding: 16px 20px;
     }
-    &_about {
+    &__about {
       padding: 17px 20px;
     }
   }
