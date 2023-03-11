@@ -36,9 +36,10 @@
             left: 5%;
             right: 30%;
             font-size: 24px;
+            line-height: 24px;
         }
     }
-    .main_home .banner {
+    .main__home .banner {
         height: 111px;
         & img {
             height: 370%;
@@ -46,7 +47,7 @@
             transform: translateY(-50%);
         }
     }
-    .main_about .banner {
+    .main__about .banner {
         height: 223px;
         & img {
             width: 115%;
