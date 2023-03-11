@@ -1,0 +1,26 @@
+@use './colors';
+
+.main__error {
+    text-align: center;
+    color: colors.$couleur-primaire;
+    & h1 {
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 263px;
+        margin: 169px 0 66px 0;
+    }
+    & p {
+        font-size: 36px;
+        line-height: 51px;
+        margin: 0;
+    }
+    & a {
+        color: colors.$couleur-primaire;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.back_Home {
+    margin: 182px 0 159px 0;
+}
