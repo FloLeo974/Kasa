@@ -24,3 +24,25 @@
 .back_Home {
     margin: 182px 0 159px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .main__error {
+        & h1 {
+            font-size: 96px;
+            line-height: 99px;
+            margin: 195px 0 11px 0;
+        }
+        & p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        & a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .back_Home {
+        margin: 133px 0 235px 0;
+    }
+}
