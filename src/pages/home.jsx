@@ -1,9 +1,15 @@
+import { useEffect } from "react"
 import Banner from "../components/Banner"
-import BannerImg from "../assets/Banner_Home.jpg"
 import Card from "../components/Card"
+import BannerImg from "../assets/Banner_Home.jpg"
 import datasLogements from "../datas/logements.json"
 
 function Home() {
+
+    useEffect(() => {
+        document.title = "Kasa - Accueil"
+    })
+
     return(
         <main className="main__home">
             <Banner image={BannerImg} texte="Chez vous, partout et ailleurs"/>

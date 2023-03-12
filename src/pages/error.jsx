@@ -1,6 +1,12 @@
+import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 function Error() {
+
+    useEffect(() => {
+        document.title = "Kasa - Page introuvable"
+    })
+
     return (
         <main className="main__error">
             <h1>404</h1>
