@@ -1,4 +1,18 @@
 import { Link } from "react-router-dom"
+
+function Card({ id, cover, title }) {
+    return (
+      <Link id={id} className="card" to={`Logement/${id}`}>
+        <img src={cover} alt={title} />
+        <p>{title}</p>
+      </Link>
+    )
+}
+
+export default Card
+
+/* 2ème solution:
+
 import datasLogements from "../datas/logements.json"
 
 function Card() {
@@ -11,19 +25,6 @@ function Card() {
             </Link>
         ))}
         </div>
-    )
-}
-
-export default Card
-
-/* 2ème solution:
-
-function Card({ id, cover, title }) {
-    return (
-      <Link id={id} className="card" to={`Logement/${id}`}>
-        <img src={cover} alt={title} />
-        <p></p>
-      </Link>
     )
 }
 
