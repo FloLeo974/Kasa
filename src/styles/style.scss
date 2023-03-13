@@ -1,10 +1,11 @@
-@use './colors';
+@use 'colors';
 
 @import url(_Header.scss);
 @import url(_Footer.scss);
 @import url(_Banner.scss);
 @import url(_Cards.scss);
 @import url(_Error.scss);
+@import url(_Collapse.scss);
 
 * {
   box-sizing: border-box;

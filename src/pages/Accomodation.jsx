@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-function Logement() {
+function Accomodation() {
 
     useEffect(() => {
         document.title = "Kasa - Logement" // à paramétrer avec le nom du logement
@@ -8,5 +8,5 @@ function Logement() {
 
     return <div>Logement</div>
 }
-  
-export default Logement
+
+export default Accomodation
