@@ -1,0 +1,114 @@
+@use './colors';
+
+.logement {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        margin: 0;
+    }
+    &__location {
+        margin: 0 0 20px 0;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__tag {
+        font-size: 14px;
+        min-width: 115px;
+        height: 25px;
+        margin: 0 10px 5px 0;
+        padding: 3px 10px;
+        border-radius: 10px;
+        text-align: center;
+        color: colors.$couleur-secondaire;
+        background-color: colors.$couleur-primaire;
+    }
+    &__host {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &__identity {
+            display: flex;
+            font-size: 18px;
+        }
+        &__name {
+            width: 93px;
+            line-height: 26px;
+            margin: auto 0;
+            text-align: right;
+        }
+        &__photo {
+            width: 64px;
+            height: 64px;
+            border-radius: 50px;
+            margin: auto 0 auto 10px;
+        }
+        &__rating {
+            margin-top: 24px;
+            min-width: 200px;
+            & img {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logement__title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logement {
+        flex-direction: column;
+        margin-top: 15px;
+        &__title {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+        &__location {
+            margin: 5px 0 10px 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__tag {
+            font-size: 10px;
+            min-width: 84px;
+            height: 16px;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+        &__host {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            &__identity {
+                font-size: 12px;
+            }
+            &__name {
+                line-height: 17px;
+            }
+            &__photo {
+                width: 32px;
+                height: 32px;
+            }
+            &__rating {
+                margin: auto 0;
+                & img {
+                    width: 15px;
+                    margin: 0 5px 0 0;
+                }
+            }
+        }
+    }
+}
