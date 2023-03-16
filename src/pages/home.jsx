@@ -23,16 +23,3 @@ function Home() {
 }
 
 export default Home
-
-/* 2ème solution:
-
-function Home() {
-    return(
-        <main className="main__home">
-            <Banner image={BannerImg} texte="Chez vous, partout et ailleurs"/>
-            <Card />
-        </main>
-    )
-}
-
-*/

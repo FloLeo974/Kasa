@@ -7,6 +7,7 @@
 @import url(_Error.scss);
 @import url(_Collapse.scss);
 @import url(_Logement.scss);
+@import url(_Slideshow.scss);
 
 * {
   box-sizing: border-box;
@@ -31,10 +32,7 @@ main {
   &__about {
     padding: 44px 100px;
   }
-  &__error {
-    padding: 0 100px;
-  }
-  &__accomodation {
+  &__error, &__accomodation {
     padding: 0 100px;
   }
 }

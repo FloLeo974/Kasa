@@ -47,8 +47,10 @@
 }
 
 .collapse {
-    background-color: colors.$couleur-tertiaire;
     margin-bottom: 31px;
+    &--true {
+        background-color: colors.$couleur-tertiaire;
+    }
     &__title {
         display: flex;
         justify-content: space-between;
