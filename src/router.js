@@ -4,6 +4,8 @@ import Error from './pages/Error'
 import About from './pages/About'
 import Accomodation from './pages/Accomodation'
 
+// Affectation des 3 routes définies à nos pages correspondantes
+// Affectation de toute autre url à notre page d'erreur
 function Routing () {
     return(
         <Routes> 

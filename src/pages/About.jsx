@@ -4,8 +4,9 @@ import Collapse from "../components/Collapse"
 import BannerImg from "../assets/Banner_About.jpg"
 import companyValues from "../datas/company_values.json"
 
+// Affichage d'une bannière et d'une collapse par élément récupéré dans le fichier json
 function About() {
-
+    // Actualisation du titre de la page
     useEffect(() => {
         document.title = "Kasa - A Propos"
     })

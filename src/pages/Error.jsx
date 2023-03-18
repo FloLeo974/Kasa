@@ -1,8 +1,9 @@
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
+// Affichage d'un message indiquant que la page est introuvable et d'un lien de retour à la page d'accueil
 function Error() {
-
+    // Actualisation du titre de la page
     useEffect(() => {
         document.title = "Kasa - Page introuvable"
     })

@@ -1,3 +1,4 @@
+// Affichage d'une bannière avec une photo et un texte
 function Banner({image, texte})
     {
         return (

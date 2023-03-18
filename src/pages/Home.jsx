@@ -4,8 +4,9 @@ import Card from "../components/Card"
 import BannerImg from "../assets/Banner_Home.jpg"
 import accomodations_list from "../datas/accomodations_list.json"
 
+// Affichage d'une bannière et des cartes de tous les logements disponibles
 function Home() {
-
+    // Actualisation du titre de la page
     useEffect(() => {
         document.title = "Kasa - Accueil"
     })

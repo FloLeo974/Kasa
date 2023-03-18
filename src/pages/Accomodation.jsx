@@ -5,11 +5,18 @@ import Collapse from "../components/Collapse"
 import Rating from "../components/Rating"
 import accomodations from "../datas/accomodations_list.json"
 
+// Affichage du carrousel
+// Affichage du nom, du lieu et des mots-clés de la location
+// Affichage des prénom, nom, photo et note de l'hôte
+// Affichage de 2 collapses avec la description et les équipements
 function Accomodation() {
     const navigate = useNavigate()
     const params = useParams()
+    // Ciblage dans le fichier json du logement qui a le même id que celui de l'url 
     const accomodation = accomodations.find( element => element.id === params.id)
 
+    // Routage vers la page d'erreur si l'id de l'url ne correspond pas à celui d'un logement
+    // Sinon actualisation du titre de la page
     useEffect(() => {
         if (!accomodation) {
             navigate("/error");
@@ -19,6 +26,7 @@ function Accomodation() {
         }
     })
 
+    // Affichage des différents éléments si l'id de l'url a bien été trouvé
     if (accomodation) {
         return(
             <main className="main__accomodation">

@@ -1,6 +1,9 @@
 import { useState } from "react"
 import Arrow from "../assets/Arrow.svg"
 
+// Affichage d'une collapse avec un titre et un texte
+// Un clic sur le titre permet d'afficher ou de cacher le texte
+// Une flèche vers le haut ou vers le bas est affichée selon que le texte est affiché ou non
 function Collapse({title, texte}) {
     const [open, setOpen] = useState(false)
     return (

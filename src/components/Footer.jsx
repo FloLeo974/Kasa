@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import logo from '../assets/Logo_Footer.png'
 
+// Affichage du footer avec le logo et le copyright
 function Footer() {
     return (
         <footer>

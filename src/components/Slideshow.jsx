@@ -1,6 +1,8 @@
 import { useState } from "react"
 import ArrowSlides from "../assets/Arrow_Slides.svg"
 
+// Affichage d'un carrousel dans lequel on peut naviguer d'une photo à l'autre à l'aide de flèches
+// Les flèches et un bullet points sont ajoutés s'il y a plusieurs photos
 function Slideshow({ pictures }) {
   const [slide, setSlide] = useState(0)
   const previousSlide = () => {setSlide(slide === 0 ? pictures.length -1 : slide -1)}
